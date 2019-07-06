@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>Help me choose</title>
+    <link href="./main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <h1>Elins bästa lista</h1>
+  <p>Vad som helst</p>
+  <div class="bilder"></div>
+  <div class="bilder"></div>
+  <ol type="1">
+    <li>Jordgubbar</li>
+    <li>KattEr🐱</li>
+      <li>Inte hundar 🐕</li>
+      <li>Plantor🌱</li>
+    </ol>
+    <a href="https://www.facebook.com">Favoritsida</a> 
+    <script>
+    (function(){
+
+      document.querySelectorAll(".bilder").forEach(function(container){
+        let i;
+        for (i = 0; i < 9; i++) {
+          const imgtag = document.createElement("img");
+          imgtag.setAttribute("src", "Elin.jpg");
+          container.appendChild(imgtag);
+        }
+
+      });
+    })();
+    </script>
+  </body>
+</html>
